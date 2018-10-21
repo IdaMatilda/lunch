@@ -1,13 +1,9 @@
-var quotes = [
-  'Portal'
-  'Matateljen'
-  'WKB'
-  'Sallad'
+function random_item(items)
+{
 
-]
-
-function newQuote() {
-  var randomNumber = Math.floor(Math.random() * (quotes.lenght));
-  document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+return items[Math.floor(Math.random()*items.length)];
 
 }
+
+var items = [254, 45, 212, 365, 2543];
+console.log(random_item(items));
